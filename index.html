@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <!-- Menghubungkan ke file CSS Eksternal -->
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Formulir Pendaftaran</h2>
+        
+        <form action="#" method="POST">
+            
+            <!-- Input Text -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            </div>
+
+            <!-- Input Password -->
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan kata sandi" required>
+            </div>
+
+            <!-- Select Option -->
+            <div class="form-group">
+                <label for="kota">Kota Asal:</label>
+                <select id="kota" name="kota">
+                    <option value="" disabled selected>-- Pilih Kota --</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="medan">Medan</option>
+                </select>
+            </div>
+
+            <!-- Radio Button -->
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </div>
+            </div>
+
+            <!-- Textarea -->
+            <div class="form-group">
+                <label for="alamat">Alamat Lengkap:</label>
+                <textarea id="alamat" name="alamat" rows="4" placeholder="Masukkan alamat lengkap Anda..."></textarea>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group checkbox-group">
+                <label>
+                    <input type="checkbox" name="persetujuan" required> Saya menyetujui syarat dan ketentuan yang berlaku.
+                </label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Kirim Data" class="btn-submit">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
