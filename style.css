@@ -1,0 +1,109 @@
+/* Reset Margin & Padding Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Mengatur Latar Belakang Halaman */
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Wadah Utama Formulir */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* Judul Form */
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+}
+
+/* Pembungkus Setiap Elemen Input */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Styling Label */
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555555;
+}
+
+/* Styling Input Text, Password, Select, dan Textarea */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek Fokus saat Input Diklik */
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Styling Radio Button */
+.radio-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Styling Textarea */
+textarea {
+    resize: vertical; /* Pengguna hanya bisa mengubah ukuran secara vertikal */
+}
+
+/* Styling Checkbox */
+.checkbox-group label {
+    font-weight: normal;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Styling Tombol Submit */
+.btn-submit {
+    width: 100%;
+    background-color: #286ca7;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efek Hover pada Tombol Submit */
+.btn-submit:hover {
+    background-color: #2d7bba;
+}
