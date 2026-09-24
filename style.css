@@ -92,7 +92,7 @@ textarea {
 /* Styling Tombol Submit */
 .btn-submit {
     width: 100%;
-    background-color: #286ca7;
+    background-color: #28a745;
     color: white;
     padding: 12px;
     border: none;
@@ -105,5 +105,5 @@ textarea {
 
 /* Efek Hover pada Tombol Submit */
 .btn-submit:hover {
-    background-color: #2d7bba;
+    background-color: #218838;
 }
